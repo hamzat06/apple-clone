@@ -21,6 +21,7 @@ a {
     padding: 0 2.2rem;
 }
 
+
 header {
     position: fixed;
     top: 0;
@@ -70,4 +71,22 @@ header {
     width: 1.6rem;
     height: 4.4rem;
     background: url("../images/icons/search.svg") center no-repeat;
+}
+
+/* hero backgrounds */
+
+
+
+.iphone-11-pro {
+    margin-top: 4.4rem;
+    height: 69.2rem;
+    background: url(../images/background/iphone-11-pro/iphone_11_pro_large.jpg);
+}
+
+.hero {
+    background-size: auto 73.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: .6rem solid white;
+    border-bottom: .6rem solid white;
 }
