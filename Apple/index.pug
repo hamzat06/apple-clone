@@ -1,0 +1,74 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Apple Clone
+  link(rel='stylesheet' href='../css/style.css')
+header
+  .container
+    nav.nav
+      ul.nav-list.nav-list-mobile
+        li.nav-item
+          .mobile-menu
+            span.line.line-top
+            span.line.line-bottom
+        li.nav-item
+          a.nav-link.nav-link-apple(href='index.html')
+        li.nav-item
+          a.nav-link.nav-link-bag(href='#')
+      // /.nav-list nav-list-mobile
+      ul.nav-list.nav-list-pc
+        li.nav-item.nav-item-hidden
+          a.nav-link.nav-link-apple(href='index.html')
+        li.nav-item
+          a.nav-link(href='#') Mac
+        li.nav-item
+          a.nav-link(href='#') iPad
+        li.nav-item
+          a.nav-link(href='#') iPhone
+        li.nav-item
+          a.nav-link(href='#') Watch
+        li.nav-item
+          a.nav-link(href='#') TV
+        li.nav-item
+          a.nav-link(href='#') Music
+        li.nav-item
+          a.nav-link(href='#') Support
+        li.nav-item
+          a.nav-link.nav-link-search(href='#')
+        li.nav-item.nav-item-hidden
+          a.nav-link.nav-link-bag(href='#')
+      // /.nav-list nav-list-pc
+section.hero.iphone-11-pro
+  .container
+    .title
+      h2.title-heading iPhone 11 Pro
+      h3.title-sub-heading Pro cameras. Pro display. Pro performance
+      p.title-price From $24.95/mo. orr $599 with trade-in
+    .cta
+      a.cta-link(href='#') Learn more
+      a.cta-link(href='#') Buy
+// /.hero iphone-11-pro
+section.hero.iphone-11
+  .container
+    .title.title-dark
+      h2.title-heading iPhone 11
+      h3.title-sub-heading Just the right amount of everything.
+      p.title-price From $16.62/mo. orr $399 with tradee-in
+    .cta
+      a.cta-link.cta-link-dark(href='#') Learn more
+      a.cta-link.cta-link-dark(href='#') Buy
+// /.hero iphone-11-pro
+section.hero.watch
+  .container
+    .title.title-dark
+      h2.title-heading-watch
+      h3.title-sub-heading
+        | With the new always-On retina display. 
+        br
+        |  You&apos;ve never seen a watch like this.
+    .cta
+      a.cta-link.cta-link-dark(href='#') Learn more
+      a.cta-link.cta-link-dark(href='#') Buy
+// /.hero watch
