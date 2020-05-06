@@ -163,12 +163,13 @@ header {
     background-repeat: no-repeat;
     border-top: .6rem solid white;
     border-bottom: .6rem solid white;
-    height: 69.2rem !important;
+    height: 69.2rem;
 }
 
 .iphone-11-pro {
     border-top: none;
 }
+
 
 /*end */
 
@@ -322,6 +323,8 @@ header {
         padding: 11rem 5rem;
         z-index: 1000;
         box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
         transition: opacity .3s;
     }
 
@@ -329,10 +332,86 @@ header {
         width: 100%;
         height: 100vh;
         opacity: 1;
+        visibility: visible;
     }
 
     .active .nav-link-bag {
         opacity: 0;
         transition: opacity .3s;
     }
+
+    .nav-list-pc .nav-item {
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(225, 225, 225, .1);
+    }
+
+    .nav-list-pc .nav-item:nth-child(9) {
+        border-bottom: none;
+    }
+
+    .active .nav-list-pc .nav-item {
+        animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .iphone-11-pro {
+        background: url(../images/background/iphone-11-pro/iphone_11_pro_small.jpg);
+    }
+
+    .iphone-11 {
+        background: url(../images/background/iphone-11/iphone_11_small.jpg);
+    }
+
+    .watch {
+        background: url(../images/background/watch/watch_small.jpg);
+    }
+
+    .hero {
+        height: 50rem;
+        background-size: auto 54rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .title {
+        padding: 3.7rem;
+    }
+
+    .title-heading {
+        font-size: 3.2rem;
+    }
+
+    .title-sub-heading {
+        font-size: 1.9rem
+    }
+
+    .title-heading-watch {
+        margin-top: -.5rem;
+        margin-bottom: 0;
+    }
+
+    .cta {
+        margin-top: -.5rem;
+    }
+
+    .cta-link {
+        font-size: 1.9rem;
+    }
+}
+
+.cta .icon {
+    font-size: 16px;
+    padding-left: .5rem;
 }

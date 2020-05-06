@@ -6,6 +6,7 @@ html(lang="en")
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     title Apple Clone
     link(rel='stylesheet' href='../css/style.css')
+    link(rel='stylesheet', href='../css/all.min.css')
   body
     header
       //- variables needed
@@ -14,6 +15,8 @@ html(lang="en")
         var subHeading1 = "Pro cameras. Pro display. Pro performance"
         var heading2 = "iPhone 11"
         var subHeading2 = "Just the right amount of everything."
+        var cta1 = "Learn more"
+        var cta2 = "Buy"
 
       .container
         nav.nav
@@ -54,20 +57,28 @@ html(lang="en")
         .title
           h2.title-heading #{heading1}
           h3.title-sub-heading #{subHeading1}
-          p.title-price From $24.95/mo. orr $599 with trade-in
+          p.title-price From $24.95/mo. or $599 with trade-in
         .cta
-          a.cta-link(href='#') Learn more
-          a.cta-link(href='#') Buy
+          a.cta-link(href='#') #{cta1}
+            span
+              i(class="fas fa-angle-right icon")
+          a.cta-link(href='#') #{cta2}
+            span
+              i(class="fas fa-angle-right icon")
     // /.hero iphone-11-pro
     section.hero.iphone-11
       .container
         .title.title-dark
           h2.title-heading #{heading2}
           h3.title-sub-heading #{subHeading2}
-          p.title-price From $16.62/mo. orr $399 with tradee-in
+          p.title-price From $16.62/mo. or $399 with trade-in
         .cta
-          a.cta-link.cta-link-dark(href='#') Learn more
-          a.cta-link.cta-link-dark(href='#') Buy
+          a.cta-link.cta-link-dark(href='#') #{cta1}
+            span
+              i(class="fas fa-angle-right icon")
+          a.cta-link.cta-link-dark(href='#') #{cta2}
+            span
+              i(class="fas fa-angle-right icon")
     // /.hero iphone-11-pro
     section.hero.watch
       .container
@@ -78,8 +89,13 @@ html(lang="en")
             br
             |  You&apos;ve never seen a watch like this.
         .cta
-          a.cta-link.cta-link-dark(href='#') Learn more
-          a.cta-link.cta-link-dark(href='#') Buy
+          a.cta-link.cta-link-dark(href='#') #{cta1}
+            span
+              i(class="fas fa-angle-right icon")
+          a.cta-link.cta-link-dark(href='#') #{cta2}
+            span
+              i(class="fas fa-angle-right icon")
     // /.hero watch
 
+    script(src="../js/all.min.js")
     script(src="../js/script.js")
